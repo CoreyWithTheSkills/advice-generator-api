@@ -15,8 +15,6 @@ const getData = async () => {
             // Update the elements with reversed order
             AdviceMessage.innerHTML = `"${adviceText}"`; // Show the advice message in <h1>
             AdviceNumber.innerHTML = `ADVICE #${adviceId}`; // Show the ID in <h3>
-
-            return;
         }
         throw new Error('Request failed!');
     } catch (error) {

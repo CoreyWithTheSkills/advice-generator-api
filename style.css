@@ -24,6 +24,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;  /* Prevents overflow */
+    max-width: 100%;   /* Ensures container never exceeds viewport width */
+    max-height: 100%;  /* Ensures container never exceeds viewport height */
 }
 
 h1, h3{
@@ -40,13 +43,6 @@ h1{
     font-size: 1.75rem;
 }
 
-.divider-imgs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px
-}
-
 .diceImg {
     background-color: hsl(150, 100%, 66%);
     padding: 1.5rem;
@@ -55,6 +51,8 @@ h1{
     justify-content: center; /* Centers the image horizontally */
     align-items: center; /* Centers the image vertically */
     cursor: pointer;
+    max-width: 100%;  /* Prevents overflow on mobile */
+    height: auto;
 }
 
 .container{
