@@ -34,10 +34,10 @@ const adjustFontSize = (text) => {
         AdviceMessage.style.fontSize = '1.4rem';
     } else if (wordCount <= 20) {
         // Reduce font size for 10-20 words
-        AdviceMessage.style.fontSize = '1.2rem';
+        AdviceMessage.style.fontSize = '1rem';
     } else {
         // Further reduce font size for more than 20 words
-        AdviceMessage.style.fontSize = '1rem';
+        AdviceMessage.style.fontSize = '0.75rem';
     }
 };
 
